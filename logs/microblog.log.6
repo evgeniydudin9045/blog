@@ -1,0 +1,145 @@
+2019-03-05 10:30:57,839 INFO: Microblog startup [in C:\Dudin\microblog\microblog.py:37]
+2019-03-05 10:31:21,524 ERROR: Exception on /index [GET] [in c:\dudin\microblog\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Dudin\microblog\app\routes.py", line 26, in index
+    posts = current_user.followed_posts().all()
+  File "c:\dudin\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'User' object has no attribute 'followed_posts'
+2019-03-05 11:04:02,919 ERROR: Exception on /index [GET] [in c:\dudin\microblog\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Dudin\microblog\app\routes.py", line 26, in index
+    posts = current_user.followed_post().all()
+  File "c:\dudin\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'User' object has no attribute 'followed_posts'
+2019-03-05 11:04:04,142 ERROR: Exception on /index [GET] [in c:\dudin\microblog\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Dudin\microblog\app\routes.py", line 26, in index
+    posts = current_user.followed_post().all()
+  File "c:\dudin\microblog\venv\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'User' object has no attribute 'followed_posts'
+2019-03-05 11:05:15,565 INFO: Microblog startup [in C:\Dudin\microblog\microblog.py:37]
+2019-03-05 11:07:13,257 ERROR: Exception on /index [GET] [in c:\dudin\microblog\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Dudin\microblog\app\routes.py", line 26, in index
+    posts = current_user.followed_post().all()
+  File "C:\Dudin\microblog\app\models.py", line 49, in followed_post
+    followed = Post.query.join(followers, (followers.c.followed_id == Post.ude_id)).filter(
+AttributeError: type object 'Post' has no attribute 'ude_id'
+2019-03-05 11:57:13,004 INFO: Microblog startup [in C:\Dudin\microblog\microblog.py:37]
+2019-03-07 11:15:57,818 INFO: Microblog startup [in C:\Dudin\microblog\microblog.py:37]
+2019-03-07 11:18:01,818 ERROR: Exception on /user/ev29043 [GET] [in c:\dudin\microblog\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 220, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'order_by'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Dudin\microblog\app\routes.py", line 79, in user
+    posts = User.posts.order_by(Post.timestamp.desc()).paginate(
+  File "c:\dudin\microblog\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 229, in __getattr__
+    key,
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with User.posts has an attribute 'order_by'
+2019-03-07 11:19:49,640 ERROR: Exception on /user/ev29043 [GET] [in c:\dudin\microblog\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 220, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'order_by'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Dudin\microblog\app\routes.py", line 79, in user
+    posts = User.posts.order_by(Post.timestamp.desc()).paginate(
+  File "c:\dudin\microblog\venv\lib\site-packages\sqlalchemy\orm\attributes.py", line 229, in __getattr__
+    key,
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with User.posts has an attribute 'order_by'
+2019-03-14 16:37:15,020 INFO: Microblog startup [in C:\Dudin\microblog\microblog.py:37]

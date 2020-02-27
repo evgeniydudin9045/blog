@@ -1,0 +1,80 @@
+2019-03-15 16:26:50,977 ERROR: Exception on /reset_password_request [POST] [in c:\dudin\microblog\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dudin\microblog\app\routes.py", line 155, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Dudin\microblog\app\email.py", line 20, in send_password_reset_email
+    user = user, token=token))
+  File "C:\Dudin\microblog\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_mail.py", line 156, in configure_host
+    host = smtplib.SMTP_SSL(self.mail.server, self.mail.port)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 1031, in __init__
+    source_address)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 1037, in _get_socket
+    self.source_address)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\socket.py", line 727, in create_connection
+    raise err
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети
+2019-04-02 10:45:12,929 INFO: Microblog startup [in C:\Dudin\microblog\microblog.py:36]
+2019-04-02 10:47:05,114 ERROR: Exception on /reset_password_request [POST] [in c:\dudin\microblog\venv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dudin\microblog\app\routes.py", line 155, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Dudin\microblog\app\email.py", line 20, in send_password_reset_email
+    user = user, token=token))
+  File "C:\Dudin\microblog\app\email.py", line 10, in send_email
+    mail.send(msg)
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_mail.py", line 144, in __enter__
+    self.host = self.configure_host()
+  File "c:\dudin\microblog\venv\lib\site-packages\flask_mail.py", line 156, in configure_host
+    host = smtplib.SMTP_SSL(self.mail.server, self.mail.port)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 1031, in __init__
+    source_address)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 1037, in _get_socket
+    self.source_address)
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\socket.py", line 727, in create_connection
+    raise err
+  File "C:\Users\student.dit\AppData\Local\Programs\Python\Python37-32\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети
+2019-05-29 23:00:24,589 INFO: Microblog startup [in F:\Диплом\microblog\microblog.py:36]

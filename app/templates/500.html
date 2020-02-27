@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>Не ожиданная ошибка:(</h1>
+    <p>Администратор сайта был уведомлен. Простите за временные неудобства!</p>
+    <p><a href="{{ url_for('index') }}">Back</a></p>
+{% endblock %}
